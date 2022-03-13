@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var no=window.prompt("enter the no");
+    var num1=no,rem=0,sum=0;
+    var digit=0;
+    while(no>0)
+    {
+        no=parseInt(no/10);
+        digit++;
+    }
+    no=num1;
+    while(no>0)
+    {
+      rem=parseInt(no%10);
+      sum=parseInt(sum+(Math.pow(rem,digit)));
+      no=parseInt(no/10);
+    }
+    if(sum==num1)
+    {
+    document.write("armstrong no");
+    }
+    else{
+        document.write("not armstrong no");
+    }
+</script>
+</body>
+</html>

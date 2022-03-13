@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="myheading">Temprature : </h1>
+    <h1 class="myheading">Wheather : </h1>
+    <button onclick="change()">7 P.M</button>
+    <button onclick="change1()">10 P.M</button>
+    <button onclick="change2()">12 A.M</button>
+    <button onclick="change3()">7 A.M</button>
+    <button onclick="change4()">10 A.M</button>
+    <button onclick="change5()">01 P.M</button>
+    <button onclick="change6()">04 P.M</button>
+    <button onclick="changemyDiv()"ondblclick="changemyDiv1()">Click Here to Change Div</button>
+    
+    <button ondblclick="changemyDiv2()">click here</button>
+    <div class="myDiv" style="width:300px;height:400px;border:1px solid red">
+           Hello
+    </div>
+    <script>
+        var headings=document.getElementsByTagName('h1');
+        function change(num1)
+        {
+            
+            headings[0].innerHTML='Temprature:13°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Cloudy";
+            headings[1].style.backgroundColor='pink';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change1(num1)
+        {
+            headings[0].innerHTML='Temprature:11°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Raining";
+            headings[1].style.backgroundColor='pink';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change2(num1)
+        {
+            headings[0].innerHTML='Temprature:5°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Mist";
+            headings[1].style.backgroundColor='pink';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change3(num1)
+        {
+            headings[0].innerHTML='Temprature:12°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Sunny";
+            headings[1].style.backgroundColor='yellow';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change4(num1)
+        {
+            headings[0].innerHTML='Temprature:15°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Sunny";
+            headings[1].style.backgroundColor='yellow';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change5(num1)
+        {
+            headings[0].innerHTML='Temprature:18°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Mostly sunny";
+            headings[1].style.backgroundColor='yellow';  
+        }
+        var headings=document.getElementsByTagName('h1');
+        function change6(num1)
+        {
+            headings[0].innerHTML='Temprature:14°';
+            headings[0].style.color='blue';
+            headings[1].innerHTML="Cloudy";
+            headings[1].style.backgroundColor='pink';  
+        }
+        var myDiv=document.getElementsByClassName('myDiv');
+        function changemyDiv()
+        {
+            myDiv[0].style.backgroundColor='cyan';
+            myDiv[0].innerHTML='My Div Content';
+        }
+        var myDiv=document.getElementsByClassName('myDiv');
+        function changemyDiv1()
+        {
+            myDiv[0].style.backgroundColor='white';
+            myDiv[0].innerHTML='Hello';
+        }
+        var myDiv=document.getElementsByClassName('myDiv');
+        function changemyDiv2()
+        {
+            myDiv[0].style.backgroundColor='cyan';
+            myDiv[0].innerHTML='yo';
+        }
+    </script>    
+</body>
+</html>

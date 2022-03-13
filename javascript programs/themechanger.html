@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .purple-mode {
+            background-color: purple;
+            color: yellow;
+            font-style: italic;
+        }
+
+        .orange-mode {
+            background-color: orange;
+            color: purple;
+            font-style: oblique;
+        }
+
+        .green-mode {
+            background-color: green;
+            color: yellow;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+        }
+
+        .white-mode {
+            background-color: white;
+            color: black;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="myFunction()">Dark mode</button>
+    <button onclick="myFunction2()">Purple mode</button>
+    <button onclick="myFunction4()">Green mode</button>
+    <button onclick="myFunction5()">Orange mode</button>
+    <h1>Theme changer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis et sequi itaque quasi vel ducimus ipsum
+            tempora corrupti consequatur ad at unde eius soluta, eaque facere sunt aliquam quas quidem?</p>
+
+
+
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+
+            function myFunction2() {
+                var element = document.body;
+                element.classList.toggle("purple-mode");
+            }
+            function myFunction4() {
+                var element = document.body;
+                element.classList.toggle("green-mode");
+
+
+            }
+            function myFunction5() {
+                var element = document.body;
+                element.classList.toggle("orange-mode");
+            }
+
+
+        </script>
+<img src="https://media.istockphoto.com/photos/motorcycle-crossing-the-bixby-bridge-big-sur-california-usa-picture-id185287573"alt="Bike ride" width="500" height="400">
+<img src="https://images.unsplash.com/photo-1508357941501-0924cf312bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"alt="Bike ride" width="500" height="400">
+</body>
+
+</html>

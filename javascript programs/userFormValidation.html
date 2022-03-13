@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form  method="GET">
+                <div>
+                    <label> User Name</label>
+                    <input type="text" name="username" id="username" required/>
+                    <label id="usernamelabel"></label>
+                </div>
+                <div>
+                    <lable>Password</lable>
+                    <input type="password" name="password" id="password" required/>
+                    <label id="passwordlabel"></label>
+                </div>
+                <div>
+                    <button onclick="display()">Display</button>
+                    <button type="submit">Login</button>
+                </div>
+                <div>
+                    <button onclick="validatePassword()">validatePassword</button>
+                </div>
+        </form>
+    <script>
+        function display()
+        {
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+            let usernameLabel=document.getElementById("usernamelabel");
+            let passwordLabel=document.getElementById("passwordlabel");
+            console.log("User Name:::"+username);
+            console.log('Password:::'+password);
+            if(username==''|| username==null)
+            {
+                console.log('Username can not be blank');
+                usernameLabel.style.color='red';
+                usernameLabel.innerHTML="Username Can not be Blank";
+            }
+            if(password==''|| password==null)
+            {
+                console.log('Password can not be blank');
+                passwordLabel.style.color="green";
+                passwordLabel.innerHTML=('Pasword cannot be blank');
+
+            }
+        }
+
+        function validatePassword()
+        {
+      var p = document.getElementById('password').value
+      if (p.length < 8) {
+        console.log("Your password must be at least 8 characters"); 
+       }
+      if (p.search(/[a-z]/i) < 0) {
+          console.log("Your password must contain at least one letter.");
+      }
+       if (p.search(/[0-9]/) < 0) {
+          console.log("Your password must contain at least one digit."); 
+       }
+
+       if (p.search(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/) < 0) {
+          console.log("Your password must contain at least one SPECIAL CHARACTER."); 
+       }
+    }
+    </script> 
+</body>
+</html>
